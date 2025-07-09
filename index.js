@@ -11,7 +11,7 @@ const {
 } = require("@whiskeysockets/baileys");
 const pino = require('pino');
 const chalk = require('chalk');
-const { BOT_TOKEN } = require("./config");
+const BOT_TOKEN = process.env.BOT_TOKEN;
 const crypto = require('crypto');
 const premiumFile = './premiumuser.json';
 const ownerFile = './owneruser.json';
