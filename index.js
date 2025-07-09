@@ -1,4 +1,3 @@
-require('dotenv').config();
 const { Telegraf, Markup, session } = require("telegraf");
 const fs = require('fs');
 const moment = require('moment-timezone');
@@ -12,7 +11,7 @@ const {
 } = require("@whiskeysockets/baileys");
 const pino = require('pino');
 const chalk = require('chalk');
-const BOT_TOKEN = process.env.BOT_TOKEN;
+const { BOT_TOKEN } = require("./config");
 const crypto = require('crypto');
 const premiumFile = './premiumuser.json';
 const ownerFile = './owneruser.json';
