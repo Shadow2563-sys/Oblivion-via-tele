@@ -1,3 +1,4 @@
+require('dotenv').config();
 const { Telegraf, Markup, session } = require("telegraf");
 const fs = require('fs');
 const moment = require('moment-timezone');
